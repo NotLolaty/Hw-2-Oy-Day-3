@@ -29,13 +29,14 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background: #014e56;
+  position: relative;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: inherit;
+  position: relative;
 }
 
 h1,
@@ -61,6 +62,7 @@ a {
 
 body {
   font-family: "Livvic";
+  position: relative;
 }
 
 .container {
@@ -69,6 +71,14 @@ body {
   position: relative;
 }
 
+.site-header {
+  height: 727px;
+  width: 1527px;
+  background: #014e56;
+  position: absolute;
+  left: -213px;
+  top: -8px;
+}
 .site-header__logo {
   position: absolute;
   top: 77px;
@@ -124,11 +134,11 @@ body {
   color: #fff;
 }
 
-.hero {
-  position: relative;
+.subheader__container {
+  background-color: #014e56;
 }
 
-.hero__header {
+.subheader__header {
   position: absolute;
   width: 635px;
   height: 200px;
@@ -141,7 +151,7 @@ body {
   color: #ffffff;
 }
 
-.hero__header::before {
+.subheader__header::before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -151,18 +161,18 @@ body {
   right: 748px;
 }
 
-.hero__header::after {
+.subheader__header::after {
   content: "";
   position: absolute;
   display: inline-block;
   background-image: url(../img/hero-second-img.svg);
   height: 100px;
   width: 358px;
-  top: 395px;
+  top: 377px;
   left: 750px;
 }
 
-.hero__text {
+.subheader__text {
   position: absolute;
   width: 445px;
   font-family: "Livvic";
@@ -175,7 +185,7 @@ body {
   top: 333px;
 }
 
-.hero__text::before {
+.subheader__text::before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -185,6 +195,73 @@ body {
   bottom: 200px;
 }
 
-.hero__span {
+.subheader__span {
   color: #f67e7e;
+}
+
+.site-main {
+  position: relative;
+  top: 719px;
+}
+
+.hero {
+  background-color: #012f34;
+  width: 1527px;
+  height: 684px;
+  position: absolute;
+  left: -213px;
+}
+
+.hero__header {
+  position: absolute;
+  width: 445px;
+  height: 144px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+  top: 300px;
+}
+
+.hero__list {
+  position: absolute;
+  top: 300px;
+  left: 735px;
+}
+
+.hero__item {
+  margin-bottom: 32px;
+}
+
+.hero__item::before {
+  content: "";
+  background-image: url(../img/rly-hero-first-img.svg);
+  height: 72px;
+  width: 72px;
+  display: inline-block;
+    position: absolute;
+    right: 470px;
+}
+
+.hero__subheader {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f67e7e;
+}
+
+.hero__text {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  opacity: 0.8;
+  height: 50px;
+  width: 445px;
 }
